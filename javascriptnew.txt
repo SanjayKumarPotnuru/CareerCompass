@@ -1,0 +1,132 @@
+let sec1 = document.getElementById("sec1");
+let sec2 = document.getElementById("sec2");
+let signin = document.getElementById("signin");
+let signup = document.getElementById("signup");
+let hu = document.getElementById("hu");
+let hi = document.getElementById("hi");
+let hell = document.getElementById("duv2");
+let hell1 = document.getElementById("duv1");
+let hell2 = document.getElementById("sec2");
+let hell3 = document.getElementById("ky");
+let hell4 = document.getElementById("ky1");
+let hell5 = document.getElementById("div1");
+let hell6 = document.getElementById("pkj");
+let hell7 = document.getElementById("fd");
+let hell8 = document.getElementById("poi");
+let hell9 = document.getElementById("secf");
+let exit1 = document.getElementById("exit1");
+let back1 = document.getElementById("back1");
+let hell10 = document.getElementById("secf1");
+let hell11 = document.getElementById("dso");
+let hell12 = document.getElementById("deo");
+let hell13 = document.getElementById("secf2");
+let exit2 = document.getElementById("exit2");
+let back2 = document.getElementById("back2");
+let exit3 = document.getElementById("exit3");
+let back3 = document.getElementById("back3");
+let inp1 = document.getElementById("inp1");
+let pass = {
+    password: "thani",
+    email: "thanishq",
+
+};
+let y = pass["password"];
+console.log(y);
+
+inp1.addEventListener("keydown", function(event) {
+    if (inp1.key === "Enter" && inp1.value === "thani") {
+        console.log("roight");
+    }
+})
+
+
+signin.onclick = function() {
+    let key1 = sec1.style.order = 2;
+    sec2.style.order = 1;
+    if (key1 === 1) {
+        sec1.style.order = 2;
+        sec2.style.order = 1;
+    } else {
+        sec1.style.order = 1;
+        sec2.style.order = 2;
+    }
+    hell.style.display = "block";
+    hell1.style.display = "none";
+    hell2.style.display = "none";
+}
+signup.onclick = function() {
+    let key = sec1.style.order = 2;
+    sec2.style.order = 1;
+    if (key === 1) {
+        sec1.style.order = 1;
+        sec2.style.order = 2;
+    } else {
+        sec1.style.order = 2;
+        sec2.style.order = 1;
+    }
+    hell.style.display = "block";
+    hell1.style.display = "none";
+    hell2.style.display = "none";
+}
+
+function ser() {
+    let sec = document.getElementById("sec2")
+    if (sec.style.display === 'none') {
+        sec.style.display === 'display'
+    } else {
+        sec.style.display === 'none'
+    }
+}
+
+hell3.onclick = function() {
+    hell.style.display = "none";
+    hell7.style.display = "block";
+}
+hell4.onclick = function() {
+    hell.style.display = "none";
+    hell5.style.display = "block";
+}
+hell6.onclick = function() {
+    hell1.style.display = "block";
+    hell7.style.display = "none";
+}
+hell8.onclick = function() {
+    hell9.style.display = "block";
+    hell8.style.display = "none";
+    hell5.style.display = "none";
+}
+exit1.onclick = function() {
+    hell9.style.display = "none";
+    hell7.style.display = "block";
+}
+back1.onclick = function() {
+    hell9.style.display = "none";
+    hell5.style.display = "block";
+}
+hell11.onclick = function() {
+    hell5.style.display = "none";
+    hell10.style.display = "block";
+}
+hell12.onclick = function() {
+    hell5.style.display = "none";
+    hell13.style.display = "block";
+}
+
+exit2.onclick = function() {
+    hell10.style.display = "none";
+    hell7.style.display = "block";
+}
+back2.onclick = function() {
+    hell10.style.display = "none";
+    hell5.style.display = "block";
+}
+
+
+exit3.onclick = function() {
+    hell13.style.display = "none";
+    hell7.style.display = "block";
+}
+back3.onclick = function() {
+    hell13.style.display = "none";
+    hell5.style.display = "block";
+}
